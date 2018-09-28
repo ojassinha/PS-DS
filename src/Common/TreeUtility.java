@@ -12,7 +12,7 @@ public class TreeUtility {
 
         int size = data.length;
         List<Tree> nodes = createNodeFromData(data);
-        for(int i = 0;i<size-2;i++){
+        for(int i = 0;i<size/2;i++){
             nodes.get(i).setLeftNode(nodes.get(2*i + 1));
             nodes.get(i).setRightNode(nodes.get(2*i + 2));
         }

@@ -10,6 +10,14 @@ public class Tree {
     private Tree leftNode;
     private Tree rightNode;
 
+    public int getData() {
+        return data;
+    }
+
+    public void setData(int data) {
+        this.data = data;
+    }
+
     public Tree getLeftNode() {
         return leftNode;
     }

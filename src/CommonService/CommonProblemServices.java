@@ -5,7 +5,7 @@ package CommonService;
  */
 public interface CommonProblemServices {
 
-    public Object createRequestBody(Object inputData);
-    public Object execute();
-    public void printResponse();
+    public Object createRequestBody();
+    public Object execute(Object node);
+    public void printResponse(Object result);
 }

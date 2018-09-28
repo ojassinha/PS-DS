@@ -8,17 +8,17 @@ import CommonService.CommonProblemServices;
 public class DjikstraAlgo implements CommonProblemServices {
 
     @Override
-    public Object createRequestBody(Object inputData) {
+    public Object createRequestBody() {
         return null;
     }
 
     @Override
-    public Object execute() {
+    public Object execute(Object node) {
         return null;
     }
 
     @Override
-    public void printResponse() {
+    public void printResponse(Object result) {
 
     }
 }
