@@ -1,5 +1,5 @@
-import GFGService.GFGProblems;
 import GFGService.GFGProblemsImpl;
+import GFGService.IGFGProblems;
 
 /**
  * Created by zedray on 8/1/18.
@@ -8,9 +8,10 @@ public class Program {
 
     public static void main(String[] args){
 
-        GFGProblems problems = new GFGProblemsImpl();
+        IGFGProblems problems = new GFGProblemsImpl();
 
-        problems.runTreeTopView();
+        //problems.runTreeTopView();
+        problems.runLCA();
 
 
     }

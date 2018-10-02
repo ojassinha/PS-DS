@@ -4,13 +4,14 @@ import Common.QueueItemWithIndex;
 import Common.Tree;
 import CommonService.CommonProblemServices;
 import HackerrankProblems.TreeTopView;
+import Models.LCARequestBody;
 
 import java.util.Map;
 
 /**
  * Created by zedray on 8/1/18.
  */
-public class GFGProblemsImpl  implements GFGProblems{
+public class GFGProblemsImpl  implements IGFGProblems{
 
 
     @Override
@@ -31,6 +32,20 @@ public class GFGProblemsImpl  implements GFGProblems{
         if(result != null){
             treeTop.printResponse(result);
         }
+
+    }
+
+    @Override
+    public void runLCA() {
+
+        CommonProblemServices treeLCA = new GFGProblems.LCA();
+
+        LCARequestBody requestBody = (LCARequestBody) treeLCA.createRequestBody();
+
+        int response = (int) treeLCA.execute(requestBody);
+
+        treeLCA.printResponse(response);
+
 
     }
 
