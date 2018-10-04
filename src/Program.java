@@ -11,7 +11,9 @@ public class Program {
         IGFGProblems problems = new GFGProblemsImpl();
 
         //problems.runTreeTopView();
-        problems.runLCA();
+        // problems.runLCA();
+
+        problems.runMaxSum();
 
 
     }

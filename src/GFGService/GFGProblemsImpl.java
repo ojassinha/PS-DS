@@ -3,6 +3,7 @@ package GFGService;
 import Common.QueueItemWithIndex;
 import Common.Tree;
 import CommonService.CommonProblemServices;
+import HackerrankProblems.MaxSubarray;
 import HackerrankProblems.TreeTopView;
 import Models.LCARequestBody;
 
@@ -47,6 +48,18 @@ public class GFGProblemsImpl  implements IGFGProblems{
         treeLCA.printResponse(response);
 
 
+    }
+
+    @Override
+    public void runMaxSum() {
+
+        CommonProblemServices maxSum = new MaxSubarray();
+
+        int[] arr = (int[]) maxSum.createRequestBody();
+
+        int[] resultArr = (int[]) maxSum.execute(arr);
+
+        maxSum.printResponse(resultArr);
     }
 
 

@@ -14,10 +14,17 @@ import java.util.List;
 public class LCA implements CommonProblemServices {
     @Override
     public Object createRequestBody() {
-        int[] arr = {4,2,7,1,3,6};
-        Tree root = TreeUtility.buildTree(arr);
+        int[] arr = {8 ,4, 9, 1, 2, 3, 6, 5};
+        //Tree root = TreeUtility.buildTree(arr);
 
-        LCARequestBody reqwuestBody = new LCARequestBody(6,2,root);
+        Tree root = null;
+        for (int i:arr) {
+
+           root = TreeUtility.insert(root,i);
+
+        }
+
+        LCARequestBody reqwuestBody = new LCARequestBody(1,2,root);
         return reqwuestBody;
     }
 
@@ -34,18 +41,20 @@ public class LCA implements CommonProblemServices {
         List<Integer> commonElements = new ArrayList<>(firstPath);
         commonElements.retainAll(secondPath);
 
-        return commonElements.get(commonElements.size()-1);
+        return commonElements.get(0);
 
 
     }
 
-    private void findNodePath(Tree tree,int data,List<Integer> list){
+    private static void findNodePath(Tree tree,int data,List<Integer> list){
 
         if(tree == null)
             return;
 
-        if(tree.getData() == data)
+        if(tree.getData() == data) {
+            list.add(tree.getData());
             return;
+        }
 
 
         if(tree.getData() > data){
@@ -61,7 +70,7 @@ public class LCA implements CommonProblemServices {
     @Override
     public void printResponse(Object result) {
 
-        System.out.print(result);
+        System.out.print(result.toString());
 
     }
 }

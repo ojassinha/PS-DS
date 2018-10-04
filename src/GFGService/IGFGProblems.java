@@ -10,4 +10,6 @@ public interface IGFGProblems {
     public void runTreeTopView();
 
     public void runLCA();
+
+    public void runMaxSum();
 }
