@@ -4,6 +4,7 @@ import Common.QueueItemWithIndex;
 import Common.Tree;
 import CommonService.CommonProblemServices;
 import HackerrankProblems.MaxSubarray;
+import HackerrankProblems.StairCaseProblem;
 import HackerrankProblems.TreeTopView;
 import Models.LCARequestBody;
 
@@ -60,6 +61,14 @@ public class GFGProblemsImpl  implements IGFGProblems{
         int[] resultArr = (int[]) maxSum.execute(arr);
 
         maxSum.printResponse(resultArr);
+    }
+
+    @Override
+    public void runStaircase() {
+        CommonProblemServices staircase = new StairCaseProblem();
+        int[] inputs = (int[]) staircase.createRequestBody();
+        int[] result = (int[]) staircase.execute(inputs);
+        staircase.printResponse(result);
     }
 
 

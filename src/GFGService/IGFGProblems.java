@@ -12,4 +12,6 @@ public interface IGFGProblems {
     public void runLCA();
 
     public void runMaxSum();
+
+    public void runStaircase();
 }
