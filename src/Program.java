@@ -15,7 +15,11 @@ public class Program {
 
         //problems.runMaxSum();
 
-        problems.runStaircase();
+        // problems.runStaircase();
+
+        // problems.runCheckBST();
+
+        problems.runHuffman();
 
 
     }

@@ -8,7 +8,7 @@ import CommonService.CommonProblemServices;
 public class MaxSubarray implements CommonProblemServices {
     @Override
     public Object createRequestBody() {
-        int[] arr = new int[]{3, 7, 4, 6, 5};
+        int[] arr = new int[]{-2, 1, 3, -4, 5};
         return arr;
     }
 
@@ -23,7 +23,7 @@ public class MaxSubarray implements CommonProblemServices {
     private int[] calculatemax(int[] arr) {
         int[] sum = new int[arr.length + 1];
 
-        sum[0] = arr[0];
+        sum[0] = 0;
         sum[1] = arr[1];
         if (arr.length <= 1) {
             return sum;

@@ -14,4 +14,8 @@ public interface IGFGProblems {
     public void runMaxSum();
 
     public void runStaircase();
+
+    public void runCheckBST();
+
+    public void runHuffman();
 }

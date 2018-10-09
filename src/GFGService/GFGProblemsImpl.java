@@ -3,9 +3,8 @@ package GFGService;
 import Common.QueueItemWithIndex;
 import Common.Tree;
 import CommonService.CommonProblemServices;
-import HackerrankProblems.MaxSubarray;
-import HackerrankProblems.StairCaseProblem;
-import HackerrankProblems.TreeTopView;
+import HackerrankProblems.*;
+import Models.HuffmanRequestBody;
 import Models.LCARequestBody;
 
 import java.util.Map;
@@ -69,6 +68,24 @@ public class GFGProblemsImpl  implements IGFGProblems{
         int[] inputs = (int[]) staircase.createRequestBody();
         int[] result = (int[]) staircase.execute(inputs);
         staircase.printResponse(result);
+    }
+
+    @Override
+    public void runCheckBST() {
+        CommonProblemServices checkbst = new CheckBST();
+        Tree inputs = (Tree) checkbst.createRequestBody();
+        boolean result = (boolean) checkbst.execute(inputs);
+        checkbst.printResponse(result);
+    }
+
+    @Override
+    public void runHuffman() {
+
+        CommonProblemServices huffman = new HuffmanDecoding();
+        HuffmanRequestBody inputs = (HuffmanRequestBody) huffman.createRequestBody();
+        String result = (String) huffman.execute(inputs);
+        huffman.printResponse(result);
+
     }
 
 
