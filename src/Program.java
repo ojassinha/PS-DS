@@ -1,6 +1,9 @@
 import GFGService.GFGProblemsImpl;
 import GFGService.IGFGProblems;
 
+import java.io.*;
+import java.util.Scanner;
+
 /**
  * Created by zedray on 8/1/18.
  */
@@ -8,19 +11,22 @@ public class Program {
 
     public static void main(String[] args){
 
+
         IGFGProblems problems = new GFGProblemsImpl();
 
         //problems.runTreeTopView();
         // problems.runLCA();
 
-        //problems.runMaxSum();
+         problems.runMaxSum();
 
         // problems.runStaircase();
 
         // problems.runCheckBST();
 
-        problems.runHuffman();
+        // problems.runHuffman();
 
 
     }
+
+
 }

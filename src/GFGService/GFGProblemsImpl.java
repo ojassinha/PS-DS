@@ -57,7 +57,7 @@ public class GFGProblemsImpl  implements IGFGProblems{
 
         int[] arr = (int[]) maxSum.createRequestBody();
 
-        int[] resultArr = (int[]) maxSum.execute(arr);
+        int resultArr = (int) maxSum.execute(arr);
 
         maxSum.printResponse(resultArr);
     }
