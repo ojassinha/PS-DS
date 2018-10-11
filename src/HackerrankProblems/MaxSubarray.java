@@ -84,6 +84,7 @@ public class MaxSubarray implements CommonProblemServices {
             sum[i] = Math.max(sum[i - 2] + arr[i], sum[i - 1]);
         }
 
+        int asd = sum[arr.length-1];
         return sum[arr.length-1];
 
     }

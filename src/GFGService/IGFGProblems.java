@@ -18,4 +18,6 @@ public interface IGFGProblems {
     public void runCheckBST();
 
     public void runHuffman();
+
+    public void runArrayRotation();
 }

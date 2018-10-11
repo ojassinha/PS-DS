@@ -4,6 +4,7 @@ import Common.QueueItemWithIndex;
 import Common.Tree;
 import CommonService.CommonProblemServices;
 import HackerrankProblems.*;
+import Models.ArrayRotationRequestBody;
 import Models.HuffmanRequestBody;
 import Models.LCARequestBody;
 
@@ -86,6 +87,15 @@ public class GFGProblemsImpl  implements IGFGProblems{
         String result = (String) huffman.execute(inputs);
         huffman.printResponse(result);
 
+    }
+
+    @Override
+    public void runArrayRotation() {
+
+        CommonProblemServices arrayRotation = new ArrayRotation();
+        ArrayRotationRequestBody inputs = (ArrayRotationRequestBody) arrayRotation.createRequestBody();
+        int[] result = (int[]) arrayRotation.execute(inputs);
+        arrayRotation.printResponse(result);
     }
 
 

@@ -17,13 +17,15 @@ public class Program {
         //problems.runTreeTopView();
         // problems.runLCA();
 
-         problems.runMaxSum();
+        // problems.runMaxSum();
 
         // problems.runStaircase();
 
         // problems.runCheckBST();
 
         // problems.runHuffman();
+
+        problems.runArrayRotation();
 
 
     }
