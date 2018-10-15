@@ -98,5 +98,13 @@ public class GFGProblemsImpl  implements IGFGProblems{
         arrayRotation.printResponse(result);
     }
 
+    @Override
+    public void runSwapPosition() {
+        CommonProblemServices swapPosition = new SwapPositions();
+        int[] inputs = (int[]) swapPosition.createRequestBody();
+        int result = (int) swapPosition.execute(inputs);
+        swapPosition.printResponse(result);
+    }
+
 
 }

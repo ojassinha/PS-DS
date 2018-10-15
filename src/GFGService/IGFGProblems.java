@@ -20,4 +20,6 @@ public interface IGFGProblems {
     public void runHuffman();
 
     public void runArrayRotation();
+
+    public void runSwapPosition();
 }

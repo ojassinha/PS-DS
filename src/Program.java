@@ -25,7 +25,9 @@ public class Program {
 
         // problems.runHuffman();
 
-        problems.runArrayRotation();
+        // problems.runArrayRotation();
+
+        problems.runSwapPosition();
 
 
     }
