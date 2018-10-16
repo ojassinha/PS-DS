@@ -27,7 +27,9 @@ public class Program {
 
         // problems.runArrayRotation();
 
-        problems.runSwapPosition();
+       // problems.runSwapPosition();
+
+        problems.runMinimumArrayDistance();
 
 
     }

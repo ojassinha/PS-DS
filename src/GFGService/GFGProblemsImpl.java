@@ -5,6 +5,7 @@ import Common.Tree;
 import CommonService.CommonProblemServices;
 import HackerrankProblems.*;
 import Models.ArrayRotationRequestBody;
+import Models.CrosswordRequest;
 import Models.HuffmanRequestBody;
 import Models.LCARequestBody;
 
@@ -104,6 +105,25 @@ public class GFGProblemsImpl  implements IGFGProblems{
         int[] inputs = (int[]) swapPosition.createRequestBody();
         int result = (int) swapPosition.execute(inputs);
         swapPosition.printResponse(result);
+    }
+
+    @Override
+    public void runCrossword() {
+
+        CommonProblemServices crosswordPuzzle = new CrosswordPuzzle();
+        CrosswordRequest inputs = (CrosswordRequest) crosswordPuzzle.createRequestBody();
+        char[][] result = (char[][]) crosswordPuzzle.execute(inputs);
+        crosswordPuzzle.printResponse(result);
+    }
+
+    @Override
+    public void runMinimumArrayDistance() {
+
+        CommonProblemServices minimumDistance = new MinimumDistance();
+        int[] inputs = (int[]) minimumDistance.createRequestBody();
+        int result = (int) minimumDistance.execute(inputs);
+        minimumDistance.printResponse(result);
+
     }
 
 
