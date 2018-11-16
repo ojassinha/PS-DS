@@ -126,5 +126,20 @@ public class GFGProblemsImpl  implements IGFGProblems{
 
     }
 
+    @Override
+    public void runLeftViewTree() {
+        CommonProblemServices treeLeft = new leftViewOfTree();
+
+        // Create the request body for the tree top view
+        Tree root = (Tree) treeLeft.createRequestBody();
+
+        // create the response map containing the
+        Map<Integer, Integer> result = (Map<Integer, Integer>) treeLeft.execute(root);
+
+        if(result != null){
+            treeLeft.printResponse(result);
+        }
+    }
+
 
 }

@@ -29,7 +29,9 @@ public class Program {
 
        // problems.runSwapPosition();
 
-        problems.runMinimumArrayDistance();
+       // problems.runMinimumArrayDistance();
+
+        problems.runLeftViewTree();
 
 
     }

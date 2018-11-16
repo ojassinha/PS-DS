@@ -28,4 +28,6 @@ public interface IGFGProblems {
 
     // https://www.hackerrank.com/challenges/minimum-distances
     public void runMinimumArrayDistance();
+
+    public void runLeftViewTree();
 }
