@@ -8,6 +8,14 @@ public class Graph {
 
     private int N;
 
+    public int getN() {
+        return N;
+    }
+
+    public void setN(int n) {
+        N = n;
+    }
+
     public LinkedList<Integer>[] edges;
 
     public Graph(int n){

@@ -27,11 +27,16 @@ public class Program {
 
         // problems.runArrayRotation();
 
-       // problems.runSwapPosition();
+        // problems.runSwapPosition();
 
-       // problems.runMinimumArrayDistance();
+        // problems.runMinimumArrayDistance();
 
-        problems.runLeftViewTree();
+        // problems.runLeftViewTree();
+
+
+        // problems.runGraphBFS();
+
+           problems.runBinarySearch();
 
 
     }

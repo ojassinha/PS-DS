@@ -30,4 +30,10 @@ public interface IGFGProblems {
     public void runMinimumArrayDistance();
 
     public void runLeftViewTree();
+
+    public void runGraphBFS();
+
+    public void runBinarySearch();
+
+
 }

@@ -1,14 +1,18 @@
 package GFGService;
 
+import Common.Graph;
 import Common.QueueItemWithIndex;
 import Common.Tree;
 import CommonService.CommonProblemServices;
+import GFGProblems.BinarySearch;
+import GFGProblems.GraphBBFS;
 import HackerrankProblems.*;
 import Models.ArrayRotationRequestBody;
 import Models.CrosswordRequest;
 import Models.HuffmanRequestBody;
 import Models.LCARequestBody;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -139,6 +143,29 @@ public class GFGProblemsImpl  implements IGFGProblems{
         if(result != null){
             treeLeft.printResponse(result);
         }
+    }
+
+    @Override
+    public void runGraphBFS() {
+
+        CommonProblemServices bfs = new GraphBBFS();
+
+        Graph graph = (Graph) bfs.createRequestBody();
+
+        List<Integer> response = (List<Integer>) bfs.execute(graph);
+        bfs.printResponse(response);
+
+    }
+
+    @Override
+    public void runBinarySearch() {
+        CommonProblemServices binarySearch = new BinarySearch();
+
+        int[] request = (int[]) binarySearch.createRequestBody();
+
+        int response = (int) binarySearch.execute(request);
+
+        binarySearch.printResponse(response);
     }
 
 
