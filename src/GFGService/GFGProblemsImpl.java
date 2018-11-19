@@ -6,6 +6,7 @@ import Common.Tree;
 import CommonService.CommonProblemServices;
 import GFGProblems.BinarySearch;
 import GFGProblems.GraphBBFS;
+import GFGProblems.GraphDFS;
 import HackerrankProblems.*;
 import Models.ArrayRotationRequestBody;
 import Models.CrosswordRequest;
@@ -166,6 +167,16 @@ public class GFGProblemsImpl  implements IGFGProblems{
         int response = (int) binarySearch.execute(request);
 
         binarySearch.printResponse(response);
+    }
+
+    @Override
+    public void runDFS() {
+        CommonProblemServices dfs = new GraphDFS();
+
+        Graph graph = (Graph) dfs.createRequestBody();
+        List<Integer> response = (List<Integer>) dfs.execute(graph);
+
+        dfs.printResponse(response);
     }
 
 

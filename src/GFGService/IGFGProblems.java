@@ -35,5 +35,7 @@ public interface IGFGProblems {
 
     public void runBinarySearch();
 
+    public void runDFS();
+
 
 }

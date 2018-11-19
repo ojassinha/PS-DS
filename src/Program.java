@@ -36,8 +36,9 @@ public class Program {
 
         // problems.runGraphBFS();
 
-           problems.runBinarySearch();
+        // problems.runBinarySearch();
 
+           problems.runDFS();
 
     }
 
