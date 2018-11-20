@@ -24,7 +24,7 @@ public class LCA implements CommonProblemServices {
 
         }
 
-        LCARequestBody reqwuestBody = new LCARequestBody(1,2,root);
+        LCARequestBody reqwuestBody = new LCARequestBody(3,9,root);
         return reqwuestBody;
     }
 
@@ -41,7 +41,9 @@ public class LCA implements CommonProblemServices {
         List<Integer> commonElements = new ArrayList<>(firstPath);
         commonElements.retainAll(secondPath);
 
-        return commonElements.get(0);
+        //return commonElements.get(0);
+
+        return findLCA2(requestBody.getNode(),requestBody.getOne(),requestBody.getTwo()).getData();
 
 
     }
@@ -65,6 +67,25 @@ public class LCA implements CommonProblemServices {
         }
 
         list.add(tree.getData());
+    }
+
+    private static Tree findLCA2(Tree node, int data1,int data2){
+
+        if(node == null)
+            return null;
+
+        if(node.getData() == data1 || node.getData() == data2){
+            return node;
+        }
+
+        Tree left_node = findLCA2(node.getLeftNode(),data1,data2);
+        Tree right_node = findLCA2(node.getRightNode(),data1,data2);
+
+        if(left_node != null && right_node != null){
+            return node;
+        }
+
+        return left_node != null ? left_node :right_node;
     }
 
     @Override

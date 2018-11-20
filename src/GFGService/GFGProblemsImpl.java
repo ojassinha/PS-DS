@@ -7,6 +7,7 @@ import CommonService.CommonProblemServices;
 import GFGProblems.BinarySearch;
 import GFGProblems.GraphBBFS;
 import GFGProblems.GraphDFS;
+import GFGProblems.Heapsort;
 import HackerrankProblems.*;
 import Models.ArrayRotationRequestBody;
 import Models.CrosswordRequest;
@@ -177,6 +178,14 @@ public class GFGProblemsImpl  implements IGFGProblems{
         List<Integer> response = (List<Integer>) dfs.execute(graph);
 
         dfs.printResponse(response);
+    }
+
+    @Override
+    public void runHeapify() {
+        CommonProblemServices heapify = new Heapsort();
+        int[] arr = (int[]) heapify.createRequestBody();
+        int[] response = (int[]) heapify.execute(arr);
+        heapify.printResponse(response);
     }
 
 

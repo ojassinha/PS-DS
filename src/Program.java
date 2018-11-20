@@ -15,7 +15,7 @@ public class Program {
         IGFGProblems problems = new GFGProblemsImpl();
 
         //problems.runTreeTopView();
-        // problems.runLCA();
+         problems.runLCA();
 
         // problems.runMaxSum();
 
@@ -38,7 +38,9 @@ public class Program {
 
         // problems.runBinarySearch();
 
-           problems.runDFS();
+        //  problems.runDFS();
+
+        // problems.runHeapify();
 
     }
 

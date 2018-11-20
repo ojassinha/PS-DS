@@ -37,5 +37,7 @@ public interface IGFGProblems {
 
     public void runDFS();
 
+    public void runHeapify();
+
 
 }
