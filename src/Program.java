@@ -13,8 +13,10 @@ public class Program {
     public static void main(String[] args){
         IGFGProblems problems = new GFGProblemsImpl();
 
+        problems.runLevelOrderTraversal();
+
         //problems.runTreeTopView();
-         problems.runLCA();
+        // problems.runLCA();
 
         // problems.runMaxSum();
 

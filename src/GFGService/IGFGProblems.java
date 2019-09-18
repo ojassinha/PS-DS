@@ -39,5 +39,6 @@ public interface IGFGProblems {
 
     public void runHeapify();
 
+    public void runLevelOrderTraversal();
 
 }

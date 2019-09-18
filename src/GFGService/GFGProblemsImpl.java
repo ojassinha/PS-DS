@@ -11,6 +11,7 @@ import HackerrankProblems.ArrayRotation;
 import HackerrankProblems.CheckBST;
 import HackerrankProblems.CrosswordPuzzle;
 import HackerrankProblems.HuffmanDecoding;
+import HackerrankProblems.LevelOrderTraversal;
 import HackerrankProblems.MaxSubarray;
 import HackerrankProblems.MinimumDistance;
 import HackerrankProblems.StairCaseProblem;
@@ -194,6 +195,13 @@ public class GFGProblemsImpl  implements IGFGProblems{
         int[] arr = (int[]) heapify.createRequestBody();
         int[] response = (int[]) heapify.execute(arr);
         heapify.printResponse(response);
+    }
+
+    @Override
+    public void runLevelOrderTraversal() {
+        CommonProblemServices levelOrderTraversal = new LevelOrderTraversal();
+        Tree rootNode = (Tree) levelOrderTraversal.createRequestBody();
+        levelOrderTraversal.execute(rootNode);
     }
 
 
